@@ -1,0 +1,4 @@
+# fetched by tools/build.py on first run (OFL, from Google Fonts)
+tools/fonts/
+__pycache__/
+*.pyc

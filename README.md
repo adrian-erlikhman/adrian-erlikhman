@@ -1,37 +1,68 @@
-# Adrian Erlikhman
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adrian-erlikhman/adrian-erlikhman/main/assets/hero-dark.svg">
+  <img alt="Adrian Erlikhman — Los Angeles, senior at LACES, class of 2027. First-author NLP research, quant models, civic tools built on public data. Paper under review at JUDGe 2026; 1st at Decode the Ocean; 3rd at Code for Transportation." src="https://raw.githubusercontent.com/adrian-erlikhman/adrian-erlikhman/main/assets/hero-light.svg">
+</picture>
 
-Senior at LACES in Los Angeles. Most of what I do is machine learning — some
-research, a few internships, and a lot of building.
+Senior at LACES in Los Angeles. Most of my work is machine learning on data that
+was collected for some other purpose — police collision reports, ocean DNA reads,
+financial headlines — where the hard part is usually working out what the dataset
+won't tell you.
 
 **[adrianerlikhman.is-a.dev](https://adrianerlikhman.is-a.dev)** ·
 [LinkedIn](https://www.linkedin.com/in/adrian-erlikhman-55489620b) ·
-[Résumé](https://adrianerlikhman.is-a.dev/resume.pdf)
-
-### What I'm working on
-
-- **First-author NLP research** on a strange result: language models are bad at
-  recognizing their own writing, and when they guess wrong they tend to blame
-  GPT-4o or Claude.
-- An **AI/ML course** a few of us built that LAUSD is piloting.
-- Internships across a venture fund, an edtech ML team, and a space lab at
-  Caltech looking at data centers in orbit.
-
-### Selected projects
-
-| | |
-|---|---|
-| **[eDNAtlas](https://github.com/adrian-erlikhman/eDNAtlas)** | Environmental DNA as a plain-language health score for coastal sites, with Darwin Core downloads. First place at Decode the Ocean (Lovable × United Nations). |
-| **[regime-aware-portfolio-optimizer](https://github.com/adrian-erlikhman/regime-aware-portfolio-optimizer)** | A Hidden Markov Model reads the market's hidden state, then de-risks when it turns turbulent. Benchmarked on Sharpe against a static 60/40. |
-| **[lstm-equity-forecaster](https://github.com/adrian-erlikhman/lstm-equity-forecaster)** | Stacked LSTM on rolling windows, kept honest by a linear baseline and scored on directional accuracy. |
-| **[finbert-sentiment-analyzer](https://github.com/adrian-erlikhman/finbert-sentiment-analyzer)** | FinBERT turns financial headlines into a daily sentiment signal, with an offline lexicon fallback. |
-| **[fraud-detection-system](https://github.com/adrian-erlikhman/fraud-detection-system)** | Random Forest vs. Gradient Boosting on 1%-fraud data, scored on PR-AUC and tuned to a recall-weighted threshold. |
-
-### Away from the keyboard
-
-Épée fencer — A26, Region 4 No. 1, U.S. Junior No. 49, U.S. Senior No. 78, and a
-peak of No. 17 in Cadet. I fence out of LA International Fencing Center.
-[Competition record ↗](https://fencingtracker.com/p/100253463/Adrian-Erlikhman)
+[Résumé](https://adrianerlikhman.is-a.dev/resume.pdf) ·
+[erlikhman.adrian@gmail.com](mailto:erlikhman.adrian@gmail.com)
 
 ---
 
-Reach me at **erlikhman.adrian@gmail.com**.
+### `[01]` What I'm working on
+
+**Whether a language model can recognize its own writing.** It mostly can't, and
+the errors aren't uniform: when a model misattributes a passage, it
+disproportionately names GPT-4o or Claude. I'm first author. The paper is under
+review at JUDGe 2026, a NeurIPS workshop —
+[write-up and a live stylometry demo](https://adrianerlikhman.is-a.dev/#papers).
+
+**An AI/ML course that LAUSD is piloting.** A few of us wrote the curriculum.
+
+**Three internships at once.** A venture fund, an edtech ML team, and a space lab
+at Caltech costing out what it takes to run data centers in orbit.
+
+---
+
+### `[02]` Things I've built
+
+Two of these won something. The rest are the quant and ML work I do when nobody
+is grading it.
+
+| | |
+|---|---|
+| **[eDNAtlas](https://github.com/adrian-erlikhman/eDNAtlas)**<br>`1st · Decode the Ocean` | Environmental DNA turned into a plain-language health score for coastal sites, with Darwin Core exports for anyone who wants the underlying records. First at Lovable × United Nations. |
+| **[safe-routes-to-school](https://github.com/adrian-erlikhman/safe-routes-to-school)**<br>`3rd · Code for Transportation` | Walking directions for LA students that route around the streets where kids actually get hurt. 85,634 LAPD incidents, A\* over 431,599 blocks, and all of it runs client-side. |
+| **[why-wrong](https://github.com/adrian-erlikhman/why-wrong)** | Finds the specific misconception behind each wrong answer, groups a class into shared failure modes, then audits whether the test measured anything at all. |
+| **[regime-aware-portfolio-optimizer](https://github.com/adrian-erlikhman/regime-aware-portfolio-optimizer)** | A Hidden Markov Model reads the market's hidden state and de-risks when it turns turbulent. Benchmarked on Sharpe against a static 60/40. |
+| **[lstm-equity-forecaster](https://github.com/adrian-erlikhman/lstm-equity-forecaster)** | A stacked LSTM on rolling windows, kept honest by a linear baseline and scored on directional accuracy rather than error alone. |
+| **[finbert-sentiment-analyzer](https://github.com/adrian-erlikhman/finbert-sentiment-analyzer)** | FinBERT turns financial headlines into a daily sentiment signal, with a lexicon fallback so the pipeline still runs offline. |
+| **[fraud-detection-system](https://github.com/adrian-erlikhman/fraud-detection-system)** | Random Forest against Gradient Boosting on 1%-fraud data, scored on PR-AUC instead of accuracy and tuned to a recall-weighted threshold. |
+
+The site is open too —
+[adrian-erlikhman.github.io](https://github.com/adrian-erlikhman/adrian-erlikhman.github.io),
+one hand-written `index.html`, no framework. So is the banner at the top of this
+page: it's generated by [`tools/build.py`](tools/build.py), which converts every
+glyph to an outline so the type renders the same everywhere without a webfont.
+
+---
+
+### `[03]` Tooling
+
+Python for anything with a model in it — PyTorch, scikit-learn, pandas,
+Transformers. JavaScript and TypeScript when it has to run in someone's browser,
+which turns out to be most of the time. Postgres and Supabase behind whatever
+needs to remember something.
+
+---
+
+### `[04]` Reach me
+
+**[erlikhman.adrian@gmail.com](mailto:erlikhman.adrian@gmail.com)** — I answer
+everything.
