@@ -3,10 +3,9 @@
   <img alt="Adrian Erlikhman — Los Angeles, senior at LACES, class of 2027. First-author NLP research, quant models, civic tools built on public data. Paper under review at JUDGe 2026; 1st at Decode the Ocean; 3rd at Code for Transportation." src="https://raw.githubusercontent.com/adrian-erlikhman/adrian-erlikhman/main/assets/hero-light.svg">
 </picture>
 
-Senior at LACES in Los Angeles. Most of my work is machine learning on data that
-was collected for some other purpose — police collision reports, ocean DNA reads,
-financial headlines — where the hard part is usually working out what the dataset
-won't tell you.
+Senior at LACES in Los Angeles, working on applied NLP and quantitative
+modeling. Most of the effort goes into evaluation: metrics that don't flatter
+the model, and baselines it actually has to beat.
 
 **[adrianerlikhman.is-a.dev](https://adrianerlikhman.is-a.dev)** ·
 [LinkedIn](https://www.linkedin.com/in/adrian-erlikhman-55489620b) ·
@@ -17,52 +16,51 @@ won't tell you.
 
 ### `[01]` What I'm working on
 
-**Whether a language model can recognize its own writing.** It mostly can't, and
-the errors aren't uniform: when a model misattributes a passage, it
-disproportionately names GPT-4o or Claude. I'm first author. The paper is under
-review at JUDGe 2026, a NeurIPS workshop —
-[write-up and a live stylometry demo](https://adrianerlikhman.is-a.dev/#papers).
+**A first-author paper on model self-recognition.** Language models are poor at
+identifying their own output, and the errors are systematic rather than random:
+misattributions concentrate on GPT-4o and Claude. Under review at JUDGe 2026, a
+NeurIPS workshop.
+[Write-up and a live stylometry demo](https://adrianerlikhman.is-a.dev/#papers).
 
-**An AI/ML course that LAUSD is piloting.** A few of us wrote the curriculum.
+**An AI/ML course now piloting in LAUSD.** I co-wrote the curriculum.
 
-**Three internships at once.** A venture fund, an edtech ML team, and a space lab
-at Caltech costing out what it takes to run data centers in orbit.
+**Internships.** A venture fund, an edtech ML team, and a space lab at Caltech
+studying data centers in orbit.
 
 ---
 
 ### `[02]` Things I've built
 
-Two of these won something. The rest are the quant and ML work I do when nobody
-is grading it.
+The first two placed in competition. The rest I built on my own time.
 
 | | |
 |---|---|
-| **[eDNAtlas](https://github.com/adrian-erlikhman/eDNAtlas)**<br>`1st · Decode the Ocean` | Environmental DNA turned into a plain-language health score for coastal sites, with Darwin Core exports for anyone who wants the underlying records. First at Lovable × United Nations. |
-| **[safe-routes-to-school](https://github.com/adrian-erlikhman/safe-routes-to-school)**<br>`3rd · Code for Transportation` | Walking directions for LA students that route around the streets where kids actually get hurt. 85,634 LAPD incidents, A\* over 431,599 blocks, and all of it runs client-side. |
-| **[why-wrong](https://github.com/adrian-erlikhman/why-wrong)** | Finds the specific misconception behind each wrong answer, groups a class into shared failure modes, then audits whether the test measured anything at all. |
-| **[regime-aware-portfolio-optimizer](https://github.com/adrian-erlikhman/regime-aware-portfolio-optimizer)** | A Hidden Markov Model reads the market's hidden state and de-risks when it turns turbulent. Benchmarked on Sharpe against a static 60/40. |
-| **[lstm-equity-forecaster](https://github.com/adrian-erlikhman/lstm-equity-forecaster)** | A stacked LSTM on rolling windows, kept honest by a linear baseline and scored on directional accuracy rather than error alone. |
-| **[finbert-sentiment-analyzer](https://github.com/adrian-erlikhman/finbert-sentiment-analyzer)** | FinBERT turns financial headlines into a daily sentiment signal, with a lexicon fallback so the pipeline still runs offline. |
-| **[fraud-detection-system](https://github.com/adrian-erlikhman/fraud-detection-system)** | Random Forest against Gradient Boosting on 1%-fraud data, scored on PR-AUC instead of accuracy and tuned to a recall-weighted threshold. |
+| **[eDNAtlas](https://github.com/adrian-erlikhman/eDNAtlas)**<br>`1st · Decode the Ocean` | Turns environmental DNA into a plain-language health score for coastal sites, with Darwin Core exports for anyone who wants the underlying records. First at Lovable × United Nations. |
+| **[safe-routes-to-school](https://github.com/adrian-erlikhman/safe-routes-to-school)**<br>`3rd · Code for Transportation` | Risk-weighted walking directions for LA students. A\* over 431,599 blocks, with edge costs derived from 85,634 LAPD incident records. Runs entirely client-side. |
+| **[why-wrong](https://github.com/adrian-erlikhman/why-wrong)** | Classifies the specific misconception behind each wrong answer, clusters a class into shared failure modes, then audits whether the test measured anything in the first place. |
+| **[regime-aware-portfolio-optimizer](https://github.com/adrian-erlikhman/regime-aware-portfolio-optimizer)** | A Hidden Markov Model infers latent market regimes and shifts allocation when the state turns turbulent. Evaluated on Sharpe against a static 60/40. |
+| **[lstm-equity-forecaster](https://github.com/adrian-erlikhman/lstm-equity-forecaster)** | Stacked LSTM on rolling windows, scored on directional accuracy against a linear baseline, not on error alone. |
+| **[finbert-sentiment-analyzer](https://github.com/adrian-erlikhman/finbert-sentiment-analyzer)** | FinBERT over financial headlines, aggregated into a daily sentiment signal, with a lexicon fallback so the pipeline still runs without network access. |
+| **[fraud-detection-system](https://github.com/adrian-erlikhman/fraud-detection-system)** | Random Forest against Gradient Boosting on 1%-positive data, scored on PR-AUC rather than accuracy and thresholded for recall. |
 
-The site is open too —
+The site is open too:
 [adrian-erlikhman.github.io](https://github.com/adrian-erlikhman/adrian-erlikhman.github.io),
-one hand-written `index.html`, no framework. So is the banner at the top of this
-page: it's generated by [`tools/build.py`](tools/build.py), which converts every
-glyph to an outline so the type renders the same everywhere without a webfont.
+one hand-written `index.html`, no framework. So is the banner above.
+[`tools/build.py`](tools/build.py) converts every glyph to an outline and emits
+each one once into `<defs>`, so the type renders identically without loading a
+webfont.
 
 ---
 
 ### `[03]` Tooling
 
-Python for anything with a model in it — PyTorch, scikit-learn, pandas,
-Transformers. JavaScript and TypeScript when it has to run in someone's browser,
-which turns out to be most of the time. Postgres and Supabase behind whatever
-needs to remember something.
+Python for modeling: PyTorch, scikit-learn, pandas, Transformers. TypeScript and
+plain JavaScript when it has to run in the browser. Postgres and Supabase for
+anything that holds state.
 
 ---
 
 ### `[04]` Reach me
 
-**[erlikhman.adrian@gmail.com](mailto:erlikhman.adrian@gmail.com)** — I answer
-everything.
+**[erlikhman.adrian@gmail.com](mailto:erlikhman.adrian@gmail.com)** is the
+fastest way to get me.
