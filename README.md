@@ -2,7 +2,7 @@ Most of my effort goes into evaluation: metrics that don't flatter the model, an
 
 **[adrianerlikhman.is-a.dev](https://adrianerlikhman.is-a.dev)** ·
 [Résumé](https://adrianerlikhman.is-a.dev/resume.pdf) ·
-[LinkedIn](https://www.linkedin.com/in/adrian-erlikhman-55489620b) ·
+[LinkedIn](https://www.linkedin.com/in/adrian-erlikhman-78a262414) ·
 [erlikhman.adrian@gmail.com](mailto:erlikhman.adrian@gmail.com)
 
 | Research | Status |
