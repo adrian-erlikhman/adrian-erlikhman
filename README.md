@@ -1,19 +1,9 @@
-Most of my effort goes into evaluation: metrics that don't flatter the model, and baselines it actually has to beat.
+hi, i'm adrian. senior in los angeles.
 
-**[adrianerlikhman.is-a.dev](https://adrianerlikhman.is-a.dev)** ·
-[Résumé](https://adrianerlikhman.is-a.dev/resume.pdf) ·
-[LinkedIn](https://www.linkedin.com/in/adrian-erlikhman-78a262414) ·
-[erlikhman.adrian@gmail.com](mailto:erlikhman.adrian@gmail.com)
+mostly into ML and NLP research, especially evals: figuring out whether a model is actually good or just good on the test set. also into building small full-stack things people use, quant finance, startups, and AI in schools. i fence épée when i'm not at a laptop.
 
-| Research | Status |
-|:--|:--|
-| **[Curated to Win](https://adrianerlikhman.is-a.dev/papers/curated-to-win-arrsi2026.pdf)**: how many validation items it takes to change which reward model or LLM judge wins (12 of 2,985 on RewardBench) · [code](https://github.com/adrian-erlikhman/curated-to-win) | Accepted · ARRSI Workshop<br>AACL-IJCNLP 2026 |
-| **[Legatum Prosperity Index audit](https://github.com/RE17-IWD/legatum-prosperity-robustness)**: rankings hold overall, not in mid-table | Accepted with revisions<br>Journal of High School Science |
-| **LLM self-recognition**, measured against a peer baseline · [demo](https://adrianerlikhman.is-a.dev/demos/#stylometry) | In submission · TACL |
-| **[LangLLM](https://github.com/adrian-erlikhman/LangLLM)**: five models told apart by style in all seven languages tested | Accepted · IEEE BigData HS Symposium |
-| **[Does portfolio optimization beat splitting evenly?](https://adrianerlikhman.is-a.dev/papers/portfolio-optimization-vs-equal-weight.pdf)**: Markowitz vs. 1/N, and 1/N wins 74% of the time | Accepted with revisions<br>Oxford Journal of Student Scholarship |
-| **Built** | **Result** |
-| **[Ledger](https://visionhack-nu.vercel.app/)**: license and SNAP stocking compliance for corner stores · [code](https://github.com/michae6345-crypto/visionhack) | **1st** · VISION HACK: South LA |
-| **[eDNAtlas](https://adrianerlikhman.is-a.dev/eDNAtlas/)**: environmental DNA as a health score for coastal sites · [code](https://github.com/adrian-erlikhman/eDNAtlas) | **1st** · Decode the Ocean |
-| **[Safe Routes to School](https://safe-routes-la.github.io/)**: LA school walks routed around street crime · [code](https://github.com/safe-routes-la/safe-routes-la.github.io) | **3rd** · Code for Transportation |
-| **[SafeJew](https://safejew.org)**: 1,394 antisemitic incidents across LA and 33 campuses · [code](https://github.com/RE17-IWD/safejew) | In production |
+<p align="center">
+  <a href="https://adrianerlikhman.is-a.dev"><img src="assets/sites.svg" width="720" alt="A browser window cycling through sites Adrian built: Hivemind, Monte, SafeJew, AIML-LI, Ledger, Safe Routes to School and eDNAtlas"></a>
+</p>
+
+[adrianerlikhman.is-a.dev](https://adrianerlikhman.is-a.dev) · [linkedin](https://www.linkedin.com/in/adrian-erlikhman-78a262414)
