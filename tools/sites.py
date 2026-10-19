@@ -2,16 +2,15 @@
 import base64, io, pathlib, sys
 from PIL import Image
 SRC = pathlib.Path(sys.argv[1])  # portfolio repo img/cases
-W, H = 900, 520
+W, H = 900, 545
 # url, file, x, y, width (16:9 page + 18px bar), float delay
 WINS = [
- ("safe-routes-la.github.io", "saferoutes-walk.webp", 20, 40, 260, 0.0),
- ("aiml-initiative.org", "aimlli-home.webp", 620, 30, 260, 1.1),
- ("adrianerlikhman.is-a.dev/eDNAtlas", "ednatlas.webp", 40, 330, 250, 2.3),
- ("visionhack-nu.vercel.app", "ledger-dashboard.webp", 610, 320, 260, 0.7),
- ("ace-eta-beryl.vercel.app", "monte-film.webp", 120, 175, 290, 1.8),
- ("safejew.org", "safejew-incident.webp", 490, 170, 290, 2.9),
- ("hivemind-q17i.onrender.com", "hivemind-ad.webp", 285, 110, 340, 0.4),
+ ("safe-routes-la.github.io", "saferoutes-walk.webp", 20, 40, 270, 0.0),
+ ("aiml-initiative.org", "aimlli-home.webp", 610, 30, 270, 1.1),
+ ("ace-eta-beryl.vercel.app", "monte.png", 30, 300, 300, 2.3),
+ ("visionhack-nu.vercel.app", "ledger.png", 570, 340, 310, 0.7),
+ ("safejew.org", "safejew-incident.webp", 470, 150, 290, 2.9),
+ ("hivemind-q17i.onrender.com", "hivemind-ad.webp", 215, 120, 350, 0.4),
 ]
 BAR = 18
 out = []
